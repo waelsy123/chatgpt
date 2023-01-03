@@ -26,21 +26,21 @@ function sleep(time) {
 // const data = dummyData
 
 const data = {
-  gender: "m",
-  lastName: "ALMATAR",
-  firstName: "Abdulla",
+  gender: "f",
+  lastName: "Jazzi",
+  firstName: "Ekbara",
   title: "9",
-  birthday: "01",
-  birthmonth: "01",
-  birthyear: "1991",
+  birthday: "22",
+  birthmonth: "07",
+  birthyear: "1996",
   street: "Leystrasse",
   hausnr: "4",
   floor: "2",
   doornr: "22b",
   zip: "1200",
   city: "Wien",
-  phone: "067761806959",
-  email: "abodjarad12@gmail.com"
+  phone: "067764099664",
+  email: "Ekbara.ja22@gmail.com"
 }
 
 const removeCookie = async (page) => {
@@ -206,13 +206,13 @@ export const applyToHouse = async (url) => {
     check(page)
   ])
 
-  const now = new Date().getTime();
-
-  await page.screenshot({ path: `${now}before.png`, fullPage: true });
+  const before = new Date().getTime();
+  await page.screenshot({ path: `${before}before.png`, fullPage: true });
 
   await page.click('input[type="submit"]');
 
-  await page.screenshot({ path: `${now}after.png`, fullPage: true });
+  const after = new Date().getTime();
+  await page.screenshot({ path: `${after}after.png`, fullPage: true });
 };
 
 const launch = async () => {

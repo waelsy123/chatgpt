@@ -7,7 +7,7 @@ import * as TelegramBot from "node-telegram-bot-api";
 import * as fs from "fs";
 
 // Create a Telegram bot
-const token = "5885795688:AAElkwJZiBfuVhEtno2ZdciD6pLQRKzC8Og";
+const token = "5971305594:AAG4wXe0LFZiwXo0Q3HMy-p77irvF5Z7HKQ";
 const bot = new TelegramBot(token, { polling: true });
 
 // create a Set to store the chat IDs of incoming messages
